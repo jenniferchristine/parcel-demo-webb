@@ -2,7 +2,7 @@
 body {
   text-align: center;
   color: #2c363f;
-  background-color: #f8eaee;
+  background: url("navbkgd-top.5b0f6cdf.webp") center / cover no-repeat;
   justify-content: center;
   margin: auto;
   font-family: Poppins;
@@ -10,7 +10,7 @@ body {
 }
 
 #top-grid {
-  background: url("navbkgd-top.5b0f6cdf.webp") center / cover no-repeat;
+  background-color: #f8eaee;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
   display: grid;

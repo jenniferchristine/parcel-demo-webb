@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
 body {
-    background-color:#f8eaee;
+    background-color: #000000;
     justify-content: center;
     text-align: center;
     font-family: 'Poppins';
@@ -11,15 +11,23 @@ body {
     margin: auto;
 }
 
+
+
+#background {
+    background-color: #000000;
+    margin: 0 auto;
+    background: url("../images/laptop.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 80%;
+}
+
 #top-grid {
+    background-color:#000000;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: #444444;
     width: 100%;
-    background: url("../images/navbkgd-top.webp");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 #headbanner img {
@@ -32,18 +40,19 @@ main {
 }
 
 h1 {
-    color: #444444;
+    color: #ffffff;
     font-size: 30px;
 }
 
 h2 {
-    color: #444444;
+    color: #bdbdbd;
     padding-bottom: 3%;
     font-size: 20px;
     font-weight: 300;
 }
 
 p {
+    color: #bdbdbd;
     font-size: 16px;
 }
 
@@ -51,26 +60,45 @@ section {
     width: 40%;
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 5em 0em 10em 0em;
+    padding: 5em 0em 30em 0em;
 }
 
 footer {
-    background-color: #444444;
+    background-color: #000000;
     color:white;
-    padding: 0.5%;
     text-align: center;
     line-height: 25px;
     grid-column: span 3;
+    margin: 7em 0em 7em 0em;
 }
 
 footer p {
     font-size: 12px;
-    padding: 10%;
 }
 
-@media screen and (width <=1024px) {}
+@media screen and (max-width: 1350px) {
+    #background {
+        background-color: #000000;
+        margin: 0 auto;
+        background: url("../images/laptop.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        width: 100%;
+    }
+}
 
 @media screen and (max-width: 1024px) {
+
+    #background {
+        background-color: #000000;
+        margin: 0 auto;
+        background: url("../images/laptop.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        width: 100%;
+    }
     .menu-btn {
         display: flex;
         align-self: center;
@@ -227,4 +255,13 @@ footer p {
         color: white;
     }
 
+    #background {
+        background-color: #000000;
+        margin: 0 auto;
+        background: url("../images/laptop_short\ \(1\).webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        width: 100%;
+    }
 }
