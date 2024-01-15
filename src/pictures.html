@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>DT211G | Automatisering & publicering</title>
+    <title>DT211G | Bilder</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
@@ -33,31 +33,29 @@
                         <span class="menu-text">Stäng meny</span>
                     </button>
                     <ul>
-                        <li><a href="index.html" class="position">STARTSIDA</a></li>
-                        <li><a href="pictures.html">BILDER</a></li>
+                        <li><a href="index.html">STARTSIDA</a></li>
+                        <li><a href="pictures.html" class="position">BILDER</a></li>
                         <li><a href="process.html">ARBETSPROCESS</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <section>
-        <h1>
-            Automatisering & publicering
-        </h1>
-        <h2>
-            Information om uppgiften gällande automatisering & publicering i kursen DT211G, Frontend-baserad webbutveckling.
-        </h2>
-        <p>
-fjkldskljfdskljfsdkljfdsklj jklsdjklfedslkjfdjlks jkfldskjlf kjldsjfkldsjklfkjlds jklfdsjklfkjlds
-        </p>
-    </section>
-        <footer>
-            <p>Laborationsuppgift för kursen DT211G, Frontend-baserad webbutveckling.
-                <br>
-                Copyright Jennifer Jakobsson, 2024
-            </p>
-        </footer>
+    <main>
+        <picture id="headbanner">
+            <source media="(min-width:801px) and (max-width:1520px)" type="image/jpg" srcset="images/mellan_bild.jpg">
+            <source media="(max-width:800px)" type="image/jpg" srcset="images/liten_bild.jpg">
+            <img src="images/stor_bild.jpg" alt="Header förställande logotyp" loading="lazy">
+        </picture>
+        <div>
+            <h1>Rubrik 1</h1>
+            <footer>
+                <p>Laborationsuppgift för kursen DT211G, Frontend-baserad webbutveckling.
+                    <br>
+                    Copyright Jennifer Jakobsson, 2024
+                </p>
+            </footer>
+        </div>
     </main>
     <script src="js/main.js" type="module"></script>
 </body>

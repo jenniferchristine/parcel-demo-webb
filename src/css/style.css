@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 body {
-    background-color: #F2F5EA;
+    background-color:#BBC7A4;
     justify-content: center;
     text-align: center;
     font-family: 'Roboto';
@@ -14,7 +14,7 @@ body {
 #top-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: #BBC7A4;
+    background-color: #e75a76;
     width: 100%;
 }
 
@@ -29,18 +29,31 @@ main {
 
 h1 {
     color: #e75a76;
-    padding-bottom: 3%;
-    font-size: 200%;
+    font-size: 30px;
 }
 
 h2 {
     color: #e75a76;
     padding-bottom: 3%;
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+}
+
+section {
+    width: 40%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: solid 1px black;
+    background-image: url("images/mellan_bild.jpg");
+    background-position: center;
 }
 
 footer {
     background-color: #BBC7A4;
-    font-size: 75%;
+    font-size: 10px;
     padding: 0.5%;
     text-align: center;
     line-height: 25px;
