@@ -1,16 +1,16 @@
-@import "https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap";
 body {
   text-align: center;
   color: #2c363f;
-  background-color: #bbc7a4;
+  background-color: #f8eaee;
   justify-content: center;
   margin: auto;
-  font-family: Roboto;
+  font-family: Poppins;
   font-size: 18px;
 }
 
 #top-grid {
-  background-color: #e75a76;
+  background: url("navbkgd-top.5b0f6cdf.webp") center / cover no-repeat;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
   display: grid;
@@ -26,14 +26,15 @@ main {
 }
 
 h1 {
-  color: #e75a76;
+  color: #444;
   font-size: 30px;
 }
 
 h2 {
-  color: #e75a76;
+  color: #444;
   padding-bottom: 3%;
   font-size: 20px;
+  font-weight: 300;
 }
 
 p {
@@ -42,18 +43,23 @@ p {
 
 section {
   box-sizing: border-box;
-  border: 1px solid #000;
   width: 40%;
   margin: 0 auto;
+  padding: 5em 0 10em;
 }
 
 footer {
+  color: #fff;
   text-align: center;
-  background-color: #bbc7a4;
+  background-color: #444;
   grid-column: span 3;
   padding: .5%;
-  font-size: 14px;
   line-height: 25px;
+}
+
+footer p {
+  padding: 10%;
+  font-size: 12px;
 }
 
 @media screen and (width <= 1024px) {
@@ -115,8 +121,8 @@ footer {
   }
 
   nav li:hover {
+    color: #fff;
     cursor: pointer;
-    background-color: #bbc7a4;
   }
 
   #responsive-nav {
@@ -157,7 +163,7 @@ footer {
   }
 
   .position {
-    background-color: #fff;
+    color: #fff;
   }
 }
 
@@ -199,19 +205,14 @@ footer {
     text-decoration: none;
   }
 
-  nav a:hover {
+  nav a:hover, .position {
     color: #fff;
-    background-color: #c7c7c7;
-  }
-
-  .position {
-    background-color: #fff;
   }
 }
 
 @media screen and (width <= 600px) {
   .position {
-    background-color: #fff;
+    color: #fff;
   }
 }
 
