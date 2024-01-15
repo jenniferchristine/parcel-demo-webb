@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body {
+    background-color: #F2F5EA;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Roboto';
+    color: #2C363F;
+    margin: 0;
+    font-size: 18px;
+    margin: auto;
+}
+
+#top-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #BBC7A4;
+    width: 100%;
+}
+
+#headbanner img {
+    width: 100%;
+}
+
+main {
+    margin: 0;
+    width: 100%;
+}
+
+h1 {
+    color: #e75a76;
+    padding-bottom: 3%;
+    font-size: 200%;
+}
+
+h2 {
+    color: #e75a76;
+    padding-bottom: 3%;
+}
+
+footer {
+    background-color: #BBC7A4;
+    font-size: 75%;
+    padding: 0.5%;
+    text-align: center;
+    line-height: 25px;
+    grid-column: span 3;
+}
+
+@media screen and (width <=1024px) {}
+
+@media screen and (max-width: 1024px) {
+    .menu-btn {
+        display: flex;
+        align-self: center;
+        padding: 8px 25px;
+        background-color: #BBC7A4;
+        border: #2C363F solid 2px;
+        height: 50px;
+        font-size: 22px;
+    }
+
+    .menu-btn:hover {
+        background-color: #BBC7A4;
+        box-shadow: 0 0px 5px rgba(0, 0, 0, 0.421);
+    }
+
+    .menu-icon {
+        margin-bottom: 20px;
+        padding: 0 10px;
+    }
+
+    .bars {
+        display: block;
+        width: 20px;
+        height: 3px;
+        background-color: #2C363F;
+        margin: 5px 0;
+    }
+
+    .menu-text {
+        font-size: 1.2em;
+        color: #2C363F;
+        font-weight: 600;
+    }
+
+    nav ul {
+        width: 100%;
+        list-style-type: none;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    nav li {
+        padding: 0.8em 0;
+        width: 100%;
+        text-decoration: none;
+    }
+
+    nav a {
+        text-align: center;
+        text-decoration: none;
+        padding: 1%;
+        color: #2C363F;
+        font-weight: 900;
+        font-size: 18px;
+    }
+
+    nav li:hover {
+        background-color: #BBC7A4;
+        cursor: pointer;
+    }
+
+    #responsive-nav {
+        align-self: center;
+        padding-left: 50%;
+        align-items: center;
+    }
+
+    .close {
+        align-self: center;
+        padding: 10px 15px;
+    }
+
+    .cross1 {
+        width: 20px;
+        transform: rotate(45deg);
+        position: relative;
+        top: 5px;
+    }
+
+    .cross2 {
+        width: 20px;
+        transform: rotate(135deg);
+        position: relative;
+        top: -3px;
+    }
+
+    nav {
+        background-color: #BBC7A4;
+        box-shadow: 0 0px 10px rgba(0, 0, 0, 0.71);
+        font-size: 1.4em;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 250px;
+        display: none;
+    }
+
+    .position {
+        background-color: #ffffff;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .menu-btn {
+        display: none;
+    }
+
+    #open-menu {
+        display: none !important;
+    }
+
+    nav {
+        display: block !important;
+        position: static;
+        box-shadow: 0 0px 0px;
+        height: auto;
+        padding-top: 40px;
+        font-size: 1.4em;
+    }
+
+    nav ul {
+        height: 100%;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        display: inline;
+        padding: 1.2em 0;
+    }
+
+    nav a {
+        text-decoration: none;
+        padding: 1%;
+        color: #2C363F;
+        font-weight: 900;
+        font-size: 18px;
+    }
+
+    nav a:hover {
+        background-color: rgb(199, 199, 199);
+        color: rgb(255, 255, 255);
+    }
+
+    .position {
+        background-color: #ffffff;
+    }
+}
+
+@media screen and (width <=600px) {
+    .position {
+        background-color: #ffffff;
+    }
+
+}
