@@ -22,7 +22,7 @@ body {
 }
 
 #top-grid {
-    background-color:#000000;
+    background-color: #000000;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
@@ -61,13 +61,18 @@ section {
     padding: 5em 0em 30em 0em;
 }
 
+.step_by_step {
+    width: 70%;
+    margin: 0 auto;
+}
+
 section p {
     text-align: justify;
 }
 
 footer {
     background-color: #000000;
-    color:white;
+    color: white;
     text-align: center;
     line-height: 25px;
     grid-column: span 3;
@@ -92,6 +97,14 @@ footer {
 
 footer p {
     font-size: 12px;
+}
+
+li {
+    color: white;
+    font-size: 14px;
+    padding: 1em;
+    line-height: 20px;
+    letter-spacing: 1px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -138,7 +151,8 @@ footer p {
 
     .position {
         color: white;
-        background-color: rgb(212, 145, 145);;
+        background-color: rgb(212, 145, 145);
+        ;
     }
 }
 
@@ -161,7 +175,7 @@ footer p {
         row-gap: 2em;
 
     }
-    
+
     #background {
         background-color: #000000;
         margin: 0 auto;
@@ -171,6 +185,7 @@ footer p {
         background-position: top;
         width: 100%;
     }
+
     .menu-btn {
         display: flex;
         align-self: center;
@@ -292,7 +307,7 @@ footer p {
 
     #grid {
         display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
 }

@@ -88,6 +88,11 @@ footer p {
   font-size: 12px;
 }
 
+li {
+  color: #fff;
+  font-size: 14px;
+}
+
 @media screen and (width >= 1024px) {
   .menu-btn {
     display: none;
