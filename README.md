@@ -6,6 +6,5 @@
 
 >### Laboration i moment 1:
 >
->:radio_button: 
->
->:radio_button: 
+>:radio_button: Uppgiften handlar om att använda sig utav kommandobaserade verktyg i NodeJs för att förenkla arbetet av
+webbplatser. Denna lär ut att optimera och förminska grafikfiler samt automatisera publicering vid uppdatering.
