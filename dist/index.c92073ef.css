@@ -2,22 +2,24 @@
 body {
   text-align: center;
   color: #2c363f;
-  background: url("navbkgd-top.5b0f6cdf.webp") center / cover no-repeat;
+  background-color: #000;
   justify-content: center;
   margin: auto;
   font-family: Poppins;
   font-size: 18px;
 }
 
+#background {
+  background: url("laptop.a382efd8.webp") top / cover no-repeat;
+  width: 80%;
+  margin: 0 auto;
+}
+
 #top-grid {
-  background-color: #f8eaee;
+  background-color: #000;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
   display: grid;
-}
-
-#headbanner img {
-  width: 100%;
 }
 
 main {
@@ -26,46 +28,138 @@ main {
 }
 
 h1 {
-  color: #444;
+  color: #fff;
   font-size: 30px;
 }
 
 h2 {
-  color: #444;
+  color: #bdbdbd;
   padding-bottom: 3%;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
 }
 
 p {
-  font-size: 16px;
+  color: #bdbdbd;
+  font-size: 15px;
 }
 
 section {
   box-sizing: border-box;
   width: 40%;
   margin: 0 auto;
-  padding: 5em 0 10em;
+  padding: 5em 0;
+}
+
+#index_section {
+  padding: 5em 0 30em;
+}
+
+section p {
+  text-align: justify;
 }
 
 footer {
   color: #fff;
   text-align: center;
-  background-color: #444;
+  background-color: #000;
   grid-column: span 3;
-  padding: .5%;
+  margin: 7em 0;
   line-height: 25px;
 }
 
+#grid {
+  column-gap: 2em;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+}
+
+#grid img {
+  width: 100%;
+}
+
+#grid img:hover {
+  transition-duration: .5s;
+  transform: scale(1.2);
+}
+
 footer p {
-  padding: 10%;
   font-size: 12px;
 }
 
-@media screen and (width <= 1024px) {
+@media screen and (width >= 1024px) {
   .menu-btn {
-    background-color: #bbc7a4;
-    border: 2px solid #2c363f;
+    display: none;
+  }
+
+  #open-menu {
+    display: none !important;
+  }
+
+  nav {
+    height: auto;
+    padding-top: 40px;
+    font-size: 1.4em;
+    position: static;
+    box-shadow: 0 0;
+    display: block !important;
+  }
+
+  nav ul {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  nav li {
+    padding: 1.2em 0;
+    display: inline;
+  }
+
+  nav a {
+    color: #e4e4e4;
+    padding: 1%;
+    font-size: 18px;
+    font-weight: 900;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    color: #d49191;
+  }
+
+  .position {
+    color: #fff;
+    background-color: #d49191;
+  }
+}
+
+@media screen and (width <= 1350px) {
+  #background {
+    background: url("laptop.a382efd8.webp") top / cover no-repeat;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (width <= 1024px) {
+  #grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2em;
+    display: grid;
+  }
+
+  #background {
+    background: url("laptop.a382efd8.webp") top / cover no-repeat;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .menu-btn {
+    background-color: #000;
+    border: 2px solid #000;
     align-self: center;
     height: 50px;
     padding: 8px 25px;
@@ -74,7 +168,7 @@ footer p {
   }
 
   .menu-btn:hover {
-    background-color: #bbc7a4;
+    background-color: #7e7e7e;
     box-shadow: 0 0 5px #0000006b;
   }
 
@@ -84,7 +178,7 @@ footer p {
   }
 
   .bars {
-    background-color: #2c363f;
+    background-color: #fff;
     width: 20px;
     height: 3px;
     margin: 5px 0;
@@ -113,7 +207,7 @@ footer p {
 
   nav a {
     text-align: center;
-    color: #2c363f;
+    color: #fff;
     padding: 1%;
     font-size: 18px;
     font-weight: 900;
@@ -151,7 +245,7 @@ footer p {
   }
 
   nav {
-    background-color: #bbc7a4;
+    background-color: #2c2c2c;
     width: 250px;
     height: 100vh;
     font-size: 1.4em;
@@ -163,56 +257,24 @@ footer p {
   }
 
   .position {
-    color: #fff;
-  }
-}
-
-@media screen and (width >= 1024px) {
-  .menu-btn {
-    display: none;
-  }
-
-  #open-menu {
-    display: none !important;
-  }
-
-  nav {
-    height: auto;
-    padding-top: 40px;
-    font-size: 1.4em;
-    position: static;
-    box-shadow: 0 0;
-    display: block !important;
-  }
-
-  nav ul {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-
-  nav li {
-    padding: 1.2em 0;
-    display: inline;
-  }
-
-  nav a {
-    color: #2c363f;
-    padding: 1%;
-    font-size: 18px;
-    font-weight: 900;
-    text-decoration: none;
-  }
-
-  nav a:hover, .position {
-    color: #fff;
+    background-color: #d49191;
   }
 }
 
 @media screen and (width <= 600px) {
   .position {
     color: #fff;
+  }
+
+  #background {
+    background: url("laptop_short (1).9ef18f34.webp") top / cover no-repeat;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #grid {
+    flex-flow: column wrap;
+    display: flex;
   }
 }
 
